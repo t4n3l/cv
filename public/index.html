@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>John Doe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 id="fullName"><span class="created">Created in 2025</span></h1>
+
+      <div class="kontaktinfo">
+        <div class="block vasak">
+          <div class="pealkiri">Professional Employee</div>
+          <div class="info-rida">
+            <div class="label">Phone:</div>
+            <div class="value" id="phone"></div>
+          </div>
+          <div class="info-rida">
+            <div class="label">Email:</div>
+            <div class="value" id="email"></div>
+          </div>
+          <div class="info-rida">
+            <div class="label">Web:</div>
+            <div class="value" id="web"></div>
+          </div>
+        </div>
+
+        <div class="block parem">
+          <div class="pealkiri">Address</div>
+          <div class="info-rida">
+            <div class="label">Line 1:</div>
+            <div class="value" id="addressLine1"></div>
+          </div>
+          <div class="info-rida">
+            <div class="label">Line 2:</div>
+            <div class="value" id="addressLine2"></div>
+          </div>
+          <div class="info-rida">
+            <div class="label">Zip:</div>
+            <div class="value" id="zip"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="haridus">
+      <h2>Hariduskäik</h2>
+      <div id="education"></div>
+    </section>
+
+    <section class="kogemused">
+      <h2>Töökogemus</h2>
+      <div id="work"></div>
+    </section>
+
+    <section class="skills-references-pic">
+      <div class="pic">
+        <img src="profiilipilt.jpg" alt="Profiilipilt" />
+      </div>
+      <div class="skills">
+        <h2>Skills</h2>
+        <ul id="skills"></ul>
+      </div>
+      <div class="references">
+        <h2>Reference</h2>
+        <p id="referenceName"></p>
+        <p id="referencePosition"></p>
+        <p id="referenceCompany"></p>
+        <p id="referenceEmail"></p>
+      </div>
+    </section>
+
+    <footer>
+      <p>instagram: <span id="instagram"></span> &nbsp;&nbsp; linkedin: <span id="linkedin"></span></p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

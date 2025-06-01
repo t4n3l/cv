@@ -1,19 +1,33 @@
 const express = require('express');
 const fs = require('fs');
+const path = require('path');
+
 const app = express();
+const PORT = 3000;
 
 app.set('view engine', 'ejs');
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', (req, res) => {
-  fs.readFile('data.json', (err, data) => {
-    if (err) return res.status(500).send('Viga andmete lugemisel');
-    const jsonData = JSON.parse(data);
-    res.render('index', { person: jsonData });
-  });
+
+app.get('/', (request, response) => {
+    
+    const jsonFilePath = path.join(__dirname, 'data', 'applePieData.json');
+
+    fs.readFile(jsonFilePath, (error, dataFromFile) => {
+        if(error) {
+            console.error('Failed to read from file', error);
+            return response.status(500).send('Failed to read from file.');
+        }
+
+        const jsonData = JSON.parse(dataFromFile);
+        response.render('index', {recipe: jsonData} );
+        
+
+    })
+
 });
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`Server töötab pordil ${port}`);
+
+app.listen(PORT, () => {
+    console.log('Server is running on port: ' + PORT);
 });

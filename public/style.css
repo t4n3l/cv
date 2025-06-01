@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: 'Comic Neue', cursive;
+  background-color: #fff;
+  color: #000;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.created {
+  font-size: 0.75rem;
+  background-color: #ddd;
+  padding: 0.2rem 0.6rem;
+  border-radius: 8px;
+}
+
+.kontaktinfo {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.block {
+  width: 48%;
+  font-size: 0.95rem;
+}
+
+.pealkiri {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+}
+
+.info-rida {
+  display: flex;
+  justify-content: space-between;
+}
+
+section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.6rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.list {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.year {
+  font-weight: bold;
+  width: 80px;
+}
+
+.skills-references-pic {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.skills,
+.references {
+  width: 35%;
+  font-size: 0.9rem;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  margin-bottom: 0.4rem;
+}
+
+.references p {
+  margin-bottom: 0.3rem;
+}
+
+.pic {
+  width: 30%;
+  text-align: center;
+}
+
+.pic img {
+  width: 100%;
+  max-width: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  font-style: italic;
+  margin-top: 1.5rem;
+}
