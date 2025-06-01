@@ -9,5 +9,5 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(__dirname));
 
 app.get('/', (req, res) => {
-  res.render('index', data);
+  res.render('index', { ...data });
 });
