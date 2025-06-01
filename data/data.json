@@ -1,0 +1,8 @@
+{
+  "firstName": "Tanel",
+  "lastName": "Tester",
+  "age": 28,
+  "email": "tanel@test.ee",
+  "skills": ["HTML", "CSS", "JavaScript"],
+  "languages": ["Eesti", "Inglise"]
+}

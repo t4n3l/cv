@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <title>CV</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1><%= person.firstName %> <%= person.lastName %></h1>
+    <p><strong>Vanus:</strong> <%= person.age %></p>
+    <p><strong>Email:</strong> <%= person.email %></p>
+
+    <h2>Oskused</h2>
+    <ul>
+      <% person.skills.forEach(skill => { %>
+        <li><%= skill %></li>
+      <% }) %>
+    </ul>
+
+    <h2>Keeled</h2>
+    <ul>
+      <% person.languages.forEach(lang => { %>
+        <li><%= lang %></li>
+      <% }) %>
+    </ul>
+  </div>
+</body>
+</html>
