@@ -14,7 +14,7 @@ app.get('/', (request, response) => {
             return response.status(500).send('Failed to read from file.');
         }
         const jsonData = JSON.parse(dataFromFile);
-        response.render('index', {recipe: jsonData} );
+        response.render('index', { ...JSON.parse(dataFromFile) });
     })
 });
 app.listen(PORT, () => {
