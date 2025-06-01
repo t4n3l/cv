@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (request, response) => {
     
-    const jsonFilePath = path.join(__dirname, 'data', 'applePieData.json');
+    const jsonFilePath = path.join(__dirname, 'data', 'data.json');
 
     fs.readFile(jsonFilePath, (error, dataFromFile) => {
         if(error) {
